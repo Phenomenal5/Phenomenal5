@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="grid grid-col-1 md:grid-cols-2 mx-auto bg-slate-100">
+    <!-- product session -->
+     <div>
+      <p class="text-3xl font-bold text-gray-900 p-4">Desserts</p>
+      <div class="grid grid-col-1 md:grid-cols-3">
+        <!-- Waffle with Berries -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-waffle-desktop.jpg" alt="waffle with berries" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Waffle</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Waffle with Berries</h2>
+          <p class="text-orange-500 text-lg font-bold">$6.50</p>
+        </div>
+        <!-- Vanilla Bean Crème Brûlée -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Crème Brûlée</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Vanilla Bean Crème Brûlée</h2>
+          <p class="text-orange-500 text-lg font-bold">$7.00</p>
+        </div>
+        <!-- Macaron Mix of Five -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron Mix of Five" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Macaron</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Macaron Mix of Five</h2>
+          <p class="text-orange-500 text-lg font-bold">$8.00</p>
+        </div>
+        <!-- Classic Tiramisu -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-tiramisu-desktop.jpg" alt="Classic Tiramisu" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Tiramisu</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Classic Tiramisu</h2>
+          <p class="text-orange-500 text-lg font-bold">$5.50</p>
+        </div>
+        <!-- Pistachio Baklava -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-baklava-desktop.jpg" alt="Pistachio Baklava" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Baklava</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Pistachio Baklava</h2>
+          <p class="text-orange-500 text-lg font-bold">$4.00</p>
+        </div>
+        <!-- Lemon Meringue Pie -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-meringue-desktop.jpg" alt="Lemon Meringue Pie" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Pie</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Lemon Meringue Pie</h2>
+          <p class="text-orange-500 text-lg font-bold">$5.50</p>
+        </div>
+        <!-- Red Velvet Cake -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-cake-desktop.jpg" alt="Red Velvet Cake" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Cake</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Red Velvet Cake</h2>
+          <p class="text-orange-500 text-lg font-bold">$4.50</p>
+        </div>
+        <!-- Salted Caramel Brownie -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Brownie</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Salted Caramel Brownie</h2>
+          <p class="text-orange-500 text-lg font-bold">$4.50</p>
+        </div>
+        <!-- Vanilla Panna Cotta -->
+        <div class="p-4 relative">
+          <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta" class="w-full object-cover rounded-lg"/>
+          <button class="absolute w-[55%] bottom-[31%] left-1/2 transform -translate-x-1/2 bg-white rounded-full px-2 border-2 border-gray-900 hover:bg-gray-200 hover:cursor-pointer text-sm"><img src="./assets/images/icon-add-to-cart.svg" alt="" class="inline text-sm py-1 h-7"/> Add to Cart</button>
+          <h3 class="mt-8 text-gray-500 text-sm">Panna Cotta</h3>
+          <h2 class="text-lg text-gray-900 font-semibold">Vanilla Panna Cotta</h2>
+          <p class="text-orange-500 text-lg font-bold">$6.50</p>
+        </div>
+      </div>
+    </div>
+    <!-- Cart session -->
+    <div class=" rounded p-4 ">
+      <h3 >Your Cart (<span>0</span>)</h3>
+      <img src="./assets/images/illustration-empty-cart.svg" alt="">
+      <p>Your added items will appear here</p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
