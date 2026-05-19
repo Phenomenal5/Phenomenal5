@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  font-family: 'poppins' , sans-serif;
+  Link{
+    cursor: pointer;
+  }
+}
