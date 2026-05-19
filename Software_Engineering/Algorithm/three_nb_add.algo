@@ -1,0 +1,68 @@
+/*
+ALGORITHM three_nb_abb
+VAR
+   num1,num2,num3 : INTEGER;
+   sum : INTEGER :=0;
+BEGIN
+   Read(num1);
+   Read(num2);
+   Read(num3);
+   sum := num1 + num2 + num3;
+   Write(sum)
+END
+
+
+/* *********** Bus tickets ******* */
+
+/*
+ask how old are you
+IF you are under 16, THEN pay half ticket
+ELSE pay full ticket
+
+// first solution
+ticket_price := 20 ;
+IF (age <=16) THEN
+   ticket_price := 10 ;
+END_IF
+
+// Second solution
+IF (age <= 16) THEN
+   ticket_price := 10 ;
+ELSE
+   ticket_price := 20 ;
+END_IF
+
+*/
+
+ALGORITHM interative_for
+VAR
+   i : INTEGER;
+   sum : INTEGER := 0;
+BEGIN
+   FOR i FROM 1 TO 10 STEP 1  DO
+      sum := sum + i;
+   END_FOR
+END
+
+
+ALGORITHM interative_while
+VAR
+   n: INTEGER;
+   count: INTEGER := 0;
+BEGIN
+   WHILE (n % 2 = 0) DO
+      n:= n/2;
+      count:= count + 1;
+   END_WHILE
+   Write(count)
+END
+
+ALGORITHM iterative_repeat
+VAR
+   age:INTEGER;
+BEGIN
+   REPEAT
+      Read(age);
+   UNTIL (age>=0)
+   Write(age)
+END

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Basic</div>
+        <div class="box">
+            <form class="form" onsubmit="quiz(event)">
+                <div class="q_1">
+                    <label for="question1">What is orange a color or a fruit&quest;</label>
+                    <br><br>
+                    
+                    <label for="question1"><input type="radio" name="question_1" value="wrong"/> A color</label>
+                    <br>
+                    
+                    <label for="question1"><input type="radio" name="question_1" for="question1" value="wrong"/> A fruit</label>
+                    <br>
+                    
+                    <label for="question1"><input type="radio" name="question_1" value="right"/> Both</label>
+                </div>
+                <br><br>
+                <div class="q_2">
+                    <label for="question2">In what year did Nigeria gain independent&quest;</label>
+                    <br><br>
+                    
+                    <label for="question2"><input type="radio" name="question_2" value="wrong"/> 2000</label>
+                    <br>
+                    
+                    <label for="question2"><input type="radio" name="question_2" value="right"/> 1960</label>
+                    <br>
+                    
+                    <label for="question2"><input type="radio" name="question_2" value="wrong"/> 1962</label>
+                </div>
+                <br><br>
+                <div class="q_3">
+                    <label for="question3">HTML stands for&quest;</label>
+                    <br><br>
+                    
+                    <label for="question3"><input type="radio" name="question_3" value="wrong"/> Hyper Text Markup Language.</label>
+                    <br>
+                    
+                    <label for="question3"><input type="radio" name="question_3" value="right"/> Hypertext Markup Language.</label>
+                    <br>
+                    
+                    <label for="question3"><input type="radio" name="question_3" value="wrong"/> Hypertext Markuo Language.</label>
+                </div>
+                <footer>
+                    <button class="btn" type="submit">Submit</button>
+                </footer>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

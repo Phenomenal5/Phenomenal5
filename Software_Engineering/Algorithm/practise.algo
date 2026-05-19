@@ -1,0 +1,71 @@
+ALGORITHM sum_three_numbers
+VAR
+    num1, num2, num3 : INTEGER;
+    sum :INTEGER :=0;
+BEGIN
+    Read(num1)
+    Read(num2)
+    Read(num3)
+    IF (ola > 10) THEN
+    sum := num1 + num2 + num3;
+    END_IF
+    write(sum)
+END
+
+SWITCH (x) DO
+    case 1 : write("10h00 to 16h"); BREAK;
+    case 2 : write("11h00 to 15h"); BREAK;
+    case 3 : write("08h00 to 10h"); BREAK;
+    case 4 : write("05h00 to 18h"); BREAK;
+    default : write("Wrong number")
+END_SWITCH
+
+
+ALGORITHM interative_for
+VAR
+    i, sum : INTEGER;
+    sum := 0;
+BEGIN
+    FOR i FROM 1 TO 10 STEP step  DO
+        sum := sum + i;
+    END_FOR
+    write(sum)
+END
+
+ALGORITHM while_loop
+VAR
+    count, n : INTEGER;
+    count := 0;
+BEGIN
+    WHILE (n % 2 = 0) DO
+        n := n/2;
+        count := count + 1;
+    END_WHILE
+    write(count)
+END
+
+ALGORITHM repeat_until
+VAR
+    age : INTEGER;
+BEGIN
+    REPEAT
+        Read(age)
+    UNTIL (age >= 0)
+    write(age)
+END
+
+
+ALGORITHM max_number
+VAR
+    x, y, answer : INTEGER;
+    answer := 0;
+BEGIN
+    Read(x)
+    Read(y)
+    IF (x > y) THEN
+        answer = "x"
+    ELSE
+        answer = "y"
+    END_IF
+    write(answer)
+END

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: wheat;
+}
+
+.container {
+    width: 100%;
+    .box {
+        box-shadow: 0px 0px 8px 0.5px rgb(27, 27, 27);
+        width: 50%;
+        margin: 4rem auto;
+        padding: 1rem;
+        background: lavenderblush;
+        #my-form{
+
+            h1{
+                text-align: center;
+                padding: 0 0 1rem;
+            }
+            #warn{
+                font-size: 1.1rem;
+                padding: 0.5rem;
+                margin: 0.5rem 0;
+                background: orangered;
+            }
+            input{
+                display: block;
+                width: 100%;
+                padding: 0.5rem;
+                border-radius: 1000px;
+                margin: 0 0 1rem;
+            }
+            button{
+                border-radius: 9rem;
+                padding: 0.5rem 1rem;
+                background: yellowgreen;
+                
+            }
+            button:hover{
+                cursor: pointer;
+                background: rgb(148, 185, 73);
+                transform: translateY(-0.1rem);
+            }
+        }
+        .list {
+            padding: 1rem 0;
+            margin: 1rem 0;
+            font-size: 1.15rem;
+            li{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0.2rem 0;
+                label {
+                    
+                }
+                .del-button{
+                    display: inline;
+                    text-align: right;
+                    font-weight: 100;
+                    border: none;
+                }
+                .del-button:hover{
+                    cursor: pointer;
+                    scale: 1.2;
+                }
+                
+            }
+        }
+    }
+}
