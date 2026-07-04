@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "content": "This is a sample post",
+      "image": null,
+      "likes": 10,
+      "dislikes": 2,
+      "comments": [
+        {
+          "1": "hello"
+        },
+        {
+          "1": "hello"
+        },
+        {
+          "1": "Hello"
+        }
+      ],
+      "createdAt": "2023-10-01T12:00:00Z"
+    },
+    {
+      "id": "22c9",
+      "content": "hello",
+      "image": null,
+      "likes": 0,
+      "dislikes": 0,
+      "comments": [],
+      "createdAt": "2025-09-26T16:16:14.040Z"
+    },
+    {
+      "id": "c0e5",
+      "content": "Learn React Hooks",
+      "image": null,
+      "likes": 0,
+      "dislikes": 0,
+      "comments": [
+        {
+          "c0e5": "Abdullah"
+        }
+      ],
+      "createdAt": "2025-09-26T19:49:49.698Z"
+    },
+    {
+      "id": "b14c",
+      "content": "Learn Redux",
+      "image": null,
+      "likes": 0,
+      "dislikes": 0,
+      "comments": [
+        {
+          "b14c": "yes"
+        },
+        {
+          "b14c": "hello"
+        }
+      ],
+      "createdAt": "2025-09-27T09:10:19.517Z"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "username": "john_doe"
+    }
+  ]
+}

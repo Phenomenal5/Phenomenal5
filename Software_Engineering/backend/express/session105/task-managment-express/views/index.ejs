@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+</head>
+
+<body>
+    <h1>Welcome to the Task Manager</h1>
+    <h2>Tasks List</h2>
+    <ul>
+        <% tasks.forEach((task)=> { %>
+            <li>
+                <form action="/done/<%= task.id %>" method="post" style="display: inline;">
+                    <button type="submit">
+                        <%= task.done ? 'undo' : 'done' %>
+                    </button>
+                </form>
+                <span>
+                    <%= task.title %>
+                </span>
+                <form action="/delete/<%= task.id %>" method="post" style="display: inline;">
+                    <button type="submit">🗑️</button>
+                </form>
+            </li>
+            <% }) %>
+    </ul>
+</body>
+
+</html>

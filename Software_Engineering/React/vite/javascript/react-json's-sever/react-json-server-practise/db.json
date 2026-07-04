@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Abdullahi Jimba",
+      "email": "Jimbaabdullahi@gmail.com",
+      "address": "39 Awonusi street",
+      "id": "248a"
+    },
+    {
+      "id": "a6a1",
+      "name": "Olakunle Jimba",
+      "email": "Jimbaolakunle@gmail.com",
+      "address": "39 Awonusi street"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "email-sender-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "generate-password": "^1.7.1",
+    "nodemailer": "^7.0.6"
+  }
+}

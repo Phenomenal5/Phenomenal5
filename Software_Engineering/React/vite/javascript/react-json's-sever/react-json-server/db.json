@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "john",
+      "email": "john@gmail.com"
+    },
+    {
+      "id": "f613",
+      "name": "jimba Abdullahi",
+      "email": "jimba@gmail.com"
+    },
+    {
+      "id": "4e9a",
+      "name": "oyindamola Kawthar",
+      "email": "Jimoh@gmail.com"
+    },
+    {
+      "id": "ea13",
+      "name": "Leke",
+      "email": "Leke@gmail.com"
+    },
+    {
+      "id": "d5ce",
+      "name": "joshua",
+      "email": "joshua@gmail.com"
+    }
+  ]
+}
